@@ -30,3 +30,47 @@ uv run uvicorn demo_002.api:app --reload
 ```
 
 This will start the service on `http://127.0.0.1:8000`
+
+# Exercises
+
+Complete the following exercises to practice what you've learned:
+
+## Exercise 1: Create a Specialized Assistant
+
+Modify the existing prompt template to create a specialized assistant:
+
+- Create a chef assistant that provides recipes and cooking advice
+- Implement a tutor assistant that explains concepts in an educational manner
+- Build a travel guide assistant that recommends destinations and activities
+
+## Exercise 2: Implement Chat Memory
+
+Enhance the chat functionality with conversation memory:
+
+- Add conversation history tracking using LangChain's memory components
+- Modify the API to maintain context across multiple messages
+- Create a new endpoint that returns the conversation history
+
+## Exercise 3: Add Streaming Response
+
+Implement the planned streaming endpoint:
+
+- Create a `POST /chat/stream` endpoint that streams responses from the LLM
+- Implement proper handling of the streaming response in FastAPI
+- Add a simple HTML interface that displays the streaming response in real-time
+
+## Exercise 4: Create a Role-Based Assistant
+
+Build an assistant with different personas:
+
+- Allow users to specify a role for the assistant (e.g., "professional", "friendly", "concise")
+- Create different prompt templates for each role
+- Implement a router that selects the appropriate prompt based on the requested role
+
+## Exercise 5: Build a Tool-Using Assistant
+
+Extend the assistant with tool-using capabilities:
+
+- Define simple tools like a calculator, weather lookup, or web search simulation
+- Update the prompt template to instruct the model how to use these tools
+- Implement the logic to process tool calls and feed results back to the model
