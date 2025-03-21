@@ -1,0 +1,11 @@
+[project]
+name = "aad"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.11",
+    "langchain>=0.3.21",
+    "langchain-community>=0.3.20",
+]
